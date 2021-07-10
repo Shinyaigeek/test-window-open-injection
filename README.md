@@ -8,8 +8,11 @@ https://arstechnica.com/gadgets/2021/07/google-boots-google-play-apps-for-steali
 2. `yarn dev:index --https`を実行,
 3. `yarn dev:login --https`を実行,
 4. `src/DummyLogin.jsx`内の`LOGIN_HTML`変数のlocalhostのポート番号を今使っているものに変更
-
+5. index.htmlのlogin with facebookを押してdummy_loginの内容取れるかconsoleで確認
 ## 結果
 大丈夫そう. iframeと同様に, window.open で開かれるwindowのDOMはcross-originの場合は保護されていそう(read も writeもできない). これはwindow.openで呼び出す親側からは改竄できない聖域っぽいので, window.document.body.appendChild で `<script />` を injection したり, あるいは `呼び出しもと window` から `呼び出し先window` のDOMにイベントリスナーをはやして...みたいなのはできなさそう.
 
 やるとしたら, same originからdummy 用のログインhtmlを配信するとかになりそう, その際の挙動はFBのCORPで実際にログインとかは無理そうなので, 自分でいい感じにそれっぽいものを拵える必要がありそう
+
+でも, originで防がれていると言うことは, webviewでだとjsのインジェクションできてしまうのは納得感があった. (呼び出しもとにドメインという概念とかなさそうなので)
+これを防ぎたければ, プラットフォーム側でやるしかなさそうだけど, もう手遅れな気がせんでもない.
