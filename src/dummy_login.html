@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>test window open js injection</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta charset="utf-8" />
+    <meta
+      name="referrer"
+      content="origin-when-crossorigin"
+      id="meta_referrer"
+    />
+    <style nonce=""></style>
+    <noscript
+      ><meta http-equiv="refresh" content="0; URL=/login?_fb_noscript=1"
+    /></noscript>
+    <link rel="manifest" href="https://www.facebook.com/data/manifest/" crossorigin="use-credentials" />
+    <title id="pageTitle">Facebookにログイン</title>
+    <meta
+      name="description"
+      content="Facebookにログインして、友達や家族と写真や近況をシェアしましょう。"
+    />
+    <meta property="og:site_name" content="Facebook" />
+    <meta property="og:url" content="https://www.facebook.com/login" />
+    <meta property="og:locale" content="ja_JP" />
+    <link rel="canonical" href="https://www.facebook.com/login/web/" />
+    <link
+      rel="shortcut icon"
+      href="https://static.xx.fbcdn.net/rsrc.php/yb/r/hLRJ1GG_y0J.ico"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://static.xx.fbcdn.net/rsrc.php/v3/y9/l/0,ja_JP/LPoDpYGpAGB.css?_nc_x=Ij3Wp8lg5Kz"
+      data-bootloader-hash="VK/8Ve4"
+      crossorigin="anonymous"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://static.xx.fbcdn.net/rsrc.php/v3/yF/l/0,ja_JP/uK11BLP46xr.css?_nc_x=Ij3Wp8lg5Kz"
+      data-bootloader-hash="8YKFze/"
+      crossorigin="anonymous"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://static.xx.fbcdn.net/rsrc.php/v3/y8/l/0,ja_JP/k7jF0MrGCIc.css?_nc_x=Ij3Wp8lg5Kz"
+      data-bootloader-hash="pr4ggSR"
+      crossorigin="anonymous"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://static.xx.fbcdn.net/rsrc.php/v3/y_/l/0,ja_JP/fkKciWRPrlf.css?_nc_x=Ij3Wp8lg5Kz"
+      data-bootloader-hash="abSF0PF"
+      crossorigin="anonymous"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://static.xx.fbcdn.net/rsrc.php/v3/yG/l/0,ja_JP/JgCJBcVUK2O.css?_nc_x=Ij3Wp8lg5Kz"
+      data-bootloader-hash="KzOevY/"
+      data-nonblocking="1"
+      crossorigin="anonymous"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://static.xx.fbcdn.net/rsrc.php/v3/yT/l/0,ja_JP/JqPt5CpHYqq.css?_nc_x=Ij3Wp8lg5Kz"
+      data-bootloader-hash="iKnZGfK"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://static.xx.fbcdn.net/rsrc.php/v3iXgQ4/yz/l/ja_JP/f7T8Acoju-r.js?_nc_x=Ij3Wp8lg5Kz"
+      rel="preload"
+      as="script"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://static.xx.fbcdn.net/rsrc.php/v3/yv/r/GG1Y0sYc7My.js?_nc_x=Ij3Wp8lg5Kz"
+      rel="preload"
+      as="script"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/nt2h_93TuYV.js?_nc_x=Ij3Wp8lg5Kz"
+      rel="preload"
+      as="script"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://static.xx.fbcdn.net/rsrc.php/v3/yr/r/aSZUqLCUMj1.js?_nc_x=Ij3Wp8lg5Kz"
+      rel="preload"
+      as="script"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="data:text/css; charset=utf-8,%23bootloader_P_mr5VE{height:42px;}.bootloader_P_mr5VE{display:block!important;}"
+    />
+    <link
+      href="https://static.xx.fbcdn.net/rsrc.php/v3isUQ4/yE/l/ja_JP/BBz6H5wqJYZ.js?_nc_x=Ij3Wp8lg5Kz"
+      rel="preload"
+      as="script"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/YHSlxRc1lcs.js?_nc_x=Ij3Wp8lg5Kz"
+      rel="preload"
+      as="script"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://static.xx.fbcdn.net/rsrc.php/v3i0Bn4/y4/l/ja_JP/J9pNL5wBjPO.js?_nc_x=Ij3Wp8lg5Kz"
+      rel="preload"
+      as="script"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/HdnKBIBJODO.js?_nc_x=Ij3Wp8lg5Kz"
+      rel="preload"
+      as="script"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/DpH0Un_Rrf4.js?_nc_x=Ij3Wp8lg5Kz"
+      rel="preload"
+      as="script"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/nXQXnXWcHvs.js?_nc_x=Ij3Wp8lg5Kz"
+      rel="preload"
+      as="script"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/CUrUHu1cZcN.js?_nc_x=Ij3Wp8lg5Kz"
+      rel="preload"
+      as="script"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/Pe-zZAu7ruo.js?_nc_x=Ij3Wp8lg5Kz"
+      rel="preload"
+      as="script"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://static.xx.fbcdn.net/rsrc.php/v3/yN/r/mXFa8JSdb3Y.js?_nc_x=Ij3Wp8lg5Kz"
+      rel="preload"
+      as="script"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/CbSc1syBEUz.js?_nc_x=Ij3Wp8lg5Kz"
+      rel="preload"
+      as="script"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://static.xx.fbcdn.net/rsrc.php/v3iL2O4/yV/l/ja_JP/ZwflaiBuyk4.js?_nc_x=Ij3Wp8lg5Kz"
+      rel="preload"
+      as="script"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/FYIV9LyqXbP.js?_nc_x=Ij3Wp8lg5Kz"
+      rel="preload"
+      as="script"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://static.xx.fbcdn.net/rsrc.php/v3/y_/r/MUZzqmPAVWU.js?_nc_x=Ij3Wp8lg5Kz"
+      rel="preload"
+      as="script"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://static.xx.fbcdn.net/rsrc.php/v3iJ2t4/yd/l/ja_JP/VPX3eSntwsA.js?_nc_x=Ij3Wp8lg5Kz"
+      rel="preload"
+      as="script"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://static.xx.fbcdn.net/rsrc.php/v3/yK/r/5z87nA4VIRB.js?_nc_x=Ij3Wp8lg5Kz"
+      rel="preload"
+      as="script"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://static.xx.fbcdn.net/rsrc.php/v3/yX/r/p1czh15sK8L.js?_nc_x=Ij3Wp8lg5Kz"
+      rel="preload"
+      as="script"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://static.xx.fbcdn.net/rsrc.php/v3ip354/yg/l/ja_JP/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz"
+      rel="preload"
+      as="script"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/gfmq8ch7AMt.js?_nc_x=Ij3Wp8lg5Kz"
+      rel="preload"
+      as="script"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/UuNDEQnJwwX.js?_nc_x=Ij3Wp8lg5Kz"
+      rel="preload"
+      as="script"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://static.xx.fbcdn.net/rsrc.php/v3/y_/r/JopZtdti8dq.js?_nc_x=Ij3Wp8lg5Kz"
+      rel="preload"
+      as="script"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="_li" id="u_0_2_Uq">
+      <div
+        class="_3_s0 _1toe _3_s1 _3_s1 uiBoxGray noborder"
+        data-testid="ax-navigation-menubar"
+        id="u_0_3_0j"
+      >
+        <div class="_608m">
+          <div class="_5aj7 _tb6">
+            <div class="_4bl7"><span class="mrm _3bcv _50f3">移動:</span></div>
+            <div class="_4bl9 _3bcp">
+              <div
+                class="_6a _608n"
+                aria-label="ナビゲーションアシスタント"
+                aria-keyshortcuts="Alt+/"
+                role="menubar"
+                id="u_0_4_ll"
+              >
+                <div class="_6a uiPopover" id="u_0_5_+y">
+                  <a
+                    role="menuitem"
+                    class="
+                      _42ft
+                      _4jy0
+                      _55pi
+                      _2agf
+                      _4o_4
+                      _63xb
+                      _p
+                      _4jy3
+                      _517h
+                      _51sy
+                    "
+                    href="#"
+                    style="max-width: 200px"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    rel="toggle"
+                    id="u_0_6_qB"
+                    ><span class="_55pe">このページのセクション</span
+                    ><span class="_4o_3 _3-99"
+                      ><i class="img sp_ED7WOOJy9UA sx_c75b64"></i></span
+                  ></a>
+                </div>
+                <div class="_6a _3bcs"></div>
+                <div class="_6a mrm uiPopover" id="u_0_7_LE">
+                  <a
+                    role="menuitem"
+                    class="
+                      _42ft
+                      _4jy0
+                      _55pi
+                      _2agf
+                      _4o_4
+                      _3_s2
+                      _63xb
+                      _p
+                      _4jy3
+                      _4jy1
+                      selected
+                      _51sy
+                    "
+                    href="#"
+                    style="max-width: 200px"
+                    aria-haspopup="true"
+                    tabindex="-1"
+                    aria-expanded="false"
+                    rel="toggle"
+                    id="u_0_8_Qd"
+                    ><span class="_55pe">アクセシビリティのヘルプ</span
+                    ><span class="_4o_3 _3-99"
+                      ><i class="img sp_ED7WOOJy9UA sx_28bcec"></i></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="_4bl7 mlm pll _3bct">
+              <div class="_6a _3bcy">
+                このメニューを開くには、<span class="_3bcz">opt</span>と<span
+                  class="_3bcz"
+                  >/</span
+                >を同時に押してください
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="globalContainer" class="uiContextualLayerParent">
+        <div class="fb_content clearfix" id="content" role="main">
+          <div class="_4-u5 _30ny">
+            <div class="_97vy">
+              <img
+                class="_97vu img"
+                src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg"
+                alt="Facebook"
+              />
+            </div>
+            <span class="muffin_tracking_pixel_start"></span
+            ><img class="tracking_pixel" /><span
+              class="muffin_tracking_pixel_end"
+            ></span>
+            <div class="_4-u2 _1w1t _4-u8 _52jv">
+              <div class="_xku" id="header_block">
+                <span class="_97w1 _50f6"
+                  ><div class="_9axz">Facebookにログイン</div></span
+                >
+              </div>
+              <div class="login_form_container">
+                <form
+                  id="login_form"
+                  action="/login/device-based/regular/login/?login_attempt=1&amp;lwv=100"
+                  method="post"
+                  onsubmit=""
+                >
+                  <input
+                    type="hidden"
+                    name="jazoest"
+                    value="2866"
+                    autocomplete="off"
+                  /><input
+                    type="hidden"
+                    name="lsd"
+                    value="AVrqGe37F7U"
+                    autocomplete="off"
+                  /><input type="hidden" autocomplete="off" id="error_box" />
+                  <div id="loginform">
+                    <input
+                      type="hidden"
+                      autocomplete="off"
+                      id="display"
+                      name="display"
+                      value=""
+                    /><input
+                      type="hidden"
+                      autocomplete="off"
+                      id="enable_profile_selector"
+                      name="enable_profile_selector"
+                      value=""
+                    /><input
+                      type="hidden"
+                      autocomplete="off"
+                      id="isprivate"
+                      name="isprivate"
+                      value=""
+                    /><input
+                      type="hidden"
+                      autocomplete="off"
+                      id="legacy_return"
+                      name="legacy_return"
+                      value="0"
+                    /><input
+                      type="hidden"
+                      autocomplete="off"
+                      id="profile_selector_ids"
+                      name="profile_selector_ids"
+                      value=""
+                    /><input
+                      type="hidden"
+                      autocomplete="off"
+                      id="return_session"
+                      name="return_session"
+                      value=""
+                    /><input
+                      type="hidden"
+                      autocomplete="off"
+                      id="skip_api_login"
+                      name="skip_api_login"
+                      value=""
+                    /><input
+                      type="hidden"
+                      autocomplete="off"
+                      id="signed_next"
+                      name="signed_next"
+                      value=""
+                    /><input
+                      type="hidden"
+                      autocomplete="off"
+                      id="trynum"
+                      name="trynum"
+                      value="1"
+                    /><input
+                      type="hidden"
+                      autocomplete="off"
+                      name="timezone"
+                      value="-540"
+                      id="u_0_9_xO"
+                    /><input
+                      type="hidden"
+                      autocomplete="off"
+                      name="lgndim"
+                      value="eyJ3IjoxOTIwLCJoIjoxMDgwLCJhdyI6MTkyMCwiYWgiOjk5NCwiYyI6MjR9"
+                      id="u_0_a_3C"
+                    /><input
+                      type="hidden"
+                      name="lgnrnd"
+                      value="053349_RZW3"
+                    /><input
+                      type="hidden"
+                      id="lgnjs"
+                      name="lgnjs"
+                      value="1625920430"
+                    />
+                    <div class="clearfix _5466 _44mg" id="email_container">
+                      <input
+                        type="text"
+                        class="inputtext _55r1 inputtext _1kbt inputtext _1kbt"
+                        name="email"
+                        id="email"
+                        tabindex="0"
+                        placeholder="メールアドレスまたは電話番号:"
+                        value=""
+                        autofocus="1"
+                        autocomplete="username"
+                        aria-label="メールアドレスまたは電話番号:"
+                      />
+                    </div>
+                    <div class="clearfix _5466 _44mg">
+                      <div>
+                        <div class="_55r1 _1kbt">
+                          <input
+                            type="password"
+                            class="
+                              inputtext
+                              _55r1
+                              inputtext
+                              _9npi
+                              inputtext
+                              _9npi
+                            "
+                            name="pass"
+                            id="pass"
+                            tabindex="0"
+                            placeholder="パスワード"
+                            value=""
+                            autocomplete="current-password"
+                            aria-label="パスワード"
+                          />
+                          <div class="_9ls7 hidden_elem" id="u_0_b_Mb">
+                            <a href="#" role="button"
+                              ><div class="_9lsa">
+                                <div class="_9lsb" id="u_0_c_Pv"></div></div
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="_xkt">
+                      <button
+                        value="1"
+                        class="_42ft _4jy0 _52e0 _4jy6 _4jy1 selected _51sy"
+                        id="loginbutton"
+                        name="login"
+                        tabindex="0"
+                        type="submit"
+                      >
+                        ログイン
+                      </button>
+                    </div>
+                    <div id="login_link">
+                      <div class="_97w3">
+                        <a
+                          href="https://www.facebook.com/recover/initiate/?ars=facebook_login"
+                          class="_97w4"
+                          target=""
+                          >アカウントを忘れた場合</a
+                        >
+                      </div>
+                      <div class="_1rf5"><span class="_1rf8">または</span></div>
+                      <div class="_xkt">
+                        <a
+                          role="button"
+                          class="_42ft _4jy0 _16jx _4jy6 _4jy2 selected _51sy"
+                          href="https://www.facebook.comhttps://www.facebook.com/r.php?locale=ja_JP&amp;display=page"
+                          >新しいアカウントを作成</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <input
+                    type="hidden"
+                    autocomplete="off"
+                    id="prefill_contact_point"
+                    name="prefill_contact_point"
+                    value=""
+                  /><input
+                    type="hidden"
+                    autocomplete="off"
+                    id="prefill_source"
+                    name="prefill_source"
+                  /><input
+                    type="hidden"
+                    autocomplete="off"
+                    id="prefill_type"
+                    name="prefill_type"
+                  /><input
+                    type="hidden"
+                    autocomplete="off"
+                    id="first_prefill_source"
+                    name="first_prefill_source"
+                  /><input
+                    type="hidden"
+                    autocomplete="off"
+                    id="first_prefill_type"
+                    name="first_prefill_type"
+                  /><input
+                    type="hidden"
+                    autocomplete="off"
+                    id="had_cp_prefilled"
+                    name="had_cp_prefilled"
+                    value="false"
+                  /><input
+                    type="hidden"
+                    autocomplete="off"
+                    id="had_password_prefilled"
+                    name="had_password_prefilled"
+                    value="false"
+                  /><input
+                    type="hidden"
+                    autocomplete="off"
+                    name="ab_test_data"
+                    value=""
+                  />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="_95ke _8opy">
+            <div
+              id="pageFooter"
+              data-referrer="page_footer"
+              data-testid="page_footer"
+            >
+              <ul
+                class="
+                  uiList
+                  localeSelectorList
+                  _2pid
+                  _509-
+                  _4ki
+                  _6-h _6-j _6-i
+                "
+                data-nocookies="1"
+              >
+                <li>日本語</li>
+                <li>
+                  <a
+                    class="_sv4"
+                    dir="ltr"
+                    href="https://www.facebook.com/login"
+                    onclick='require("IntlUtils").setCookieLocale("en_US", "ja_JP", "https:\/\/www.facebook.com\/login", "www_list_selector", 0); return false;'
+                    title="English (US)"
+                    >English (US)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="_sv4"
+                    dir="ltr"
+                    href="https://pt-br.facebook.com/login"
+                    onclick='require("IntlUtils").setCookieLocale("pt_BR", "ja_JP", "https:\/\/pt-br.facebook.com\/login", "www_list_selector", 1); return false;'
+                    title="Portuguese (Brazil)"
+                    >Português (Brasil)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="_sv4"
+                    dir="ltr"
+                    href="https://zh-cn.facebook.com/login"
+                    onclick='require("IntlUtils").setCookieLocale("zh_CN", "ja_JP", "https:\/\/zh-cn.facebook.com\/login", "www_list_selector", 2); return false;'
+                    title="Simplified Chinese (China)"
+                    >中文(简体)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="_sv4"
+                    dir="ltr"
+                    href="https://vi-vn.facebook.com/login"
+                    onclick='require("IntlUtils").setCookieLocale("vi_VN", "ja_JP", "https:\/\/vi-vn.facebook.com\/login", "www_list_selector", 3); return false;'
+                    title="Vietnamese"
+                    >Tiếng Việt</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="_sv4"
+                    dir="ltr"
+                    href="https://es-la.facebook.com/login"
+                    onclick='require("IntlUtils").setCookieLocale("es_LA", "ja_JP", "https:\/\/es-la.facebook.com\/login", "www_list_selector", 4); return false;'
+                    title="Spanish"
+                    >Español</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="_sv4"
+                    dir="ltr"
+                    href="https://id-id.facebook.com/login"
+                    onclick='require("IntlUtils").setCookieLocale("id_ID", "ja_JP", "https:\/\/id-id.facebook.com\/login", "www_list_selector", 5); return false;'
+                    title="Indonesian"
+                    >Bahasa Indonesia</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="_sv4"
+                    dir="ltr"
+                    href="https://ko-kr.facebook.com/login"
+                    onclick='require("IntlUtils").setCookieLocale("ko_KR", "ja_JP", "https:\/\/ko-kr.facebook.com\/login", "www_list_selector", 6); return false;'
+                    title="Korean"
+                    >한국어</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="_sv4"
+                    dir="ltr"
+                    href="https://fr-fr.facebook.com/login"
+                    onclick='require("IntlUtils").setCookieLocale("fr_FR", "ja_JP", "https:\/\/fr-fr.facebook.com\/login", "www_list_selector", 7); return false;'
+                    title="French (France)"
+                    >Français (France)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="_sv4"
+                    dir="ltr"
+                    href="https://de-de.facebook.com/login"
+                    onclick='require("IntlUtils").setCookieLocale("de_DE", "ja_JP", "https:\/\/de-de.facebook.com\/login", "www_list_selector", 8); return false;'
+                    title="German"
+                    >Deutsch</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="_sv4"
+                    dir="ltr"
+                    href="https://it-it.facebook.com/login"
+                    onclick='require("IntlUtils").setCookieLocale("it_IT", "ja_JP", "https:\/\/it-it.facebook.com\/login", "www_list_selector", 9); return false;'
+                    title="Italian"
+                    >Italiano</a
+                  >
+                </li>
+                <li>
+                  <a
+                    role="button"
+                    class="_42ft _4jy0 _517i _517h _51sy"
+                    rel="dialog"
+                    ajaxify="/settings/language/language/?uri=https%3A%2F%2Fit-it.facebook.com%2Flogin&amp;source=www_list_selector_more"
+                    href="#"
+                    title="他の言語を表示"
+                    ><i class="img sp_mL06iAlYWAX sx_d64939"></i
+                  ></a>
+                </li>
+              </ul>
+              <div id="contentCurve"></div>
+              <div
+                id="pageFooterChildren"
+                role="contentinfo"
+                aria-label="Facebookサイトのリンク"
+              >
+                <ul class="uiList pageFooterLinkList _509- _4ki _703 _6-i">
+                  <li>
+                    <a
+                      href="https://www.facebook.com/r.php"
+                      title="Facebookに登録"
+                      >アカウント登録</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/login/" title="Facebookにログイン">ログイン</a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://messenger.com/"
+                      title="Messengerをチェック。"
+                      >Messenger</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/lite/" title="Android用Facebook Lite"
+                      >Facebook Lite</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/watch/"
+                      title="Watchの動画をチェックしよう。"
+                    >
+                      Watch
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/directory/people/"
+                      title="ユーザーディレクトリをチェック"
+                      >ユーザー</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/directory/pages/"
+                      title="ページディレクトリをチェック"
+                      >ページ</a
+                    >
+                  </li>
+                  <li><a href="/pages/category/">ページカテゴリ</a></li>
+                  <li>
+                    <a
+                      href="/places/"
+                      title="Facebookで人気のスポットをチェック"
+                      >スポット</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/games/" title="Facebookのゲームをチェック。"
+                      >ゲーム</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/directory/places/"
+                      title="スポットディレクトリをチェック"
+                      >場所</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/marketplace/"
+                      title="Facebook Marketplaceで商品を売買しよう。"
+                      >Marketplace</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://pay.facebook.com/"
+                      target="_blank"
+                      title="Facebook Payについて詳しくはこちら"
+                      >Facebook Pay</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/directory/groups/"
+                      title="グループディレクトリをチェック"
+                      >グループ</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/jobs/" title="Facebookで求人・求職ができます。"
+                      >求人</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.oculus.com/"
+                      target="_blank"
+                      title="Oculusについて詳しくはこちら"
+                      >Oculus</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://portal.facebook.com/"
+                      target="_blank"
+                      title="Portal from Facebookについて"
+                      >Portal</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F&amp;h=AT3Ag-wDy0CKVL2GxZ9gBnzp4L4wopmA0zi_iiXGJLnlcTkNL7xiBoEvwsOJt1-xCQVDFbfDdPnm93hZyvnA296r7l12i22BD21yctjPK2kSYgLuZw3r5rDGq7-n8xKEOv5Qi346RvqIMArMZM2MJW3JA6g"
+                      title="Instagramをチェック"
+                      target="_blank"
+                      rel="noopener nofollow"
+                      data-lynx-mode="asynclazy"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/local/lists/245019872666104/"
+                      title="ローカルリストディレクトリをチェック"
+                      >ローカル</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/fundraisers/" title="寄付する"
+                      >募金キャンペーン</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/biz/directory/"
+                      title="Facebookサービスディレクトリをチェック"
+                      >サービス</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/votinginformationcenter/?entry_point=c2l0ZQ%3D%3D"
+                      title="投票情報センターを見る"
+                      >投票情報センター</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://about.facebook.com/"
+                      accesskey="8"
+                      title="ブログ、リソースセンター、求人"
+                      >Facebookについて</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/ad_campaign/landing.php?placement=pflo&amp;campaign_id=402047449186&amp;nav_source=unknown&amp;extra_1=auto"
+                      title="Facebookに広告を掲載"
+                      >広告を作成</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/pages/create/?ref_type=site_footer"
+                      title="Facebookページを作成"
+                      >ページを作成</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://developers.facebook.com/?ref=pf"
+                      title="アプリ開発"
+                      >開発者</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/careers/?ref=pf"
+                      title="Facebookの魅力的なオフィスで働きませんか。"
+                      >採用情報</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      data-nocookies="1"
+                      href="/privacy/explanation"
+                      title="Facebookのプライバシーについて詳しくはこちら。"
+                      >プライバシー</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/policies/cookies/"
+                      title="CookieとFacebookについて詳細を見る"
+                      data-nocookies="1"
+                      >Cookie</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="_41ug"
+                      data-nocookies="1"
+                      href="https://www.facebook.com/help/568137493302217"
+                      title="AdChoicesについて"
+                      >AdChoices<i class="img sp_mL06iAlYWAX sx_a5d5e2"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      data-nocookies="1"
+                      href="/policies?ref=pf"
+                      accesskey="9"
+                      title="利用規約とポリシーをご確認ください。"
+                      >規約</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/help/?ref=pf"
+                      accesskey="0"
+                      title="ヘルプセンターへ移動"
+                      >ヘルプ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      accesskey="6"
+                      class="accessible_elem"
+                      href="/settings"
+                      title="Facebook設定の確認と編集"
+                      >設定</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      accesskey="7"
+                      class="accessible_elem"
+                      href="/allactivity?privacy_source=activity_log_top_menu"
+                      title="アクティビティログを見る"
+                      >アクティビティログ</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="mvl copyright">
+                <div><span> Facebook © 2021</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div></div>
+      <span
+        ><img
+          src="https://facebook.com/security/hsts-pixel.gif"
+          width="0"
+          height="0"
+          style="display: none"
+      /></span>
+    </div>
+    <div style="display: none">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

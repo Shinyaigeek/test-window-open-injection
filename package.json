@@ -1,0 +1,19 @@
+{
+  "name": "test-window-open-injection",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Shinyaigeek/test-window-open-injection.git",
+  "author": "shinyaigeek <philispaxil@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev:index": "parcel ./src/index.html",
+    "dev:login": "parcel ./src/dummy_login.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.2"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
